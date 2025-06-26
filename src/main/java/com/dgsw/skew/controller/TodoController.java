@@ -1,7 +1,7 @@
 package com.dgsw.skew.controller;
 
 
-import com.dgsw.skew.service.SkewService;
+import com.dgsw.skew.service.TodoService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class SkewController {
     @Autowired
-    private SkewService skewService;
+    private TodoService skewService;
 
     @GetMapping("/todos")
     public ResponseEntity<String> getTodos() {
